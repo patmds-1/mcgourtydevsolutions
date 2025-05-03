@@ -1,0 +1,56 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+            <table>
+                <thead>
+                
+                    <tr>     <td>
+                        Starter Plan <br>
+                        <u><i>$50 Setup and $50 Monthly</i></u>
+                     
+                    </td>
+                    </tr>
+               
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            This is the beginner plan, I'll set up your page and environment which includes:
+                            <ol>
+                                <li>Purchasing Domain Name</li>
+                                <li>Configuring Email</li>
+                                <li>Creating Customized Site</li>
+                            </ol>
+                            And then hand it back to you. All maintenance including renewal of the domain purchase and any further
+                            modifications and customizations are handled by me and covered by the renewal fee.
+                            Part of my job is to work on SEO - which is a job that's never really done, so I'll periodically check to ensure you're being prioritised by the 
+                            search programs.
+                        </td>
+                    </tr>
+                </tbody>
+                <br>
+            </table>
+
+            <br>
+            <h3>Terms:</h3>
+            
+                <i>
+                    If you no longer wish to pay for the renewal services, I'll happily hand the site files back to you so you can host elsewhere. 
+                        The domain name will be made availble for purchase, and I will personally ensure you're up and running if you choose to host yourself.                </i>
+            
+		</main>
+		<Footer />
+	</body>
+</html>
